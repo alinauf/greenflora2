@@ -68,7 +68,7 @@
 
                         <div>
                             <h3 class="text-lg font-medium text-warm-gray-900">
-                                Hotline,Viber, WhatsApp
+                                Hotline, Viber, WhatsApp
                             </h3>
                             <dl class="mt-2 text-base text-warm-gray-500">
                                 <div>
