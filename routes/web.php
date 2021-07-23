@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FloraController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FloraController::class, 'home']);
+
+Route::get('our-services', [FloraController::class, 'ourServices']);
+Route::get('rooms', [FloraController::class, 'rooms']);
+Route::get('diving', [FloraController::class, 'diving']);
+Route::get('maldives', [FloraController::class, 'maldives']);
+Route::get('about-us', [FloraController::class, 'aboutUs']);
+Route::get('contact-us', [FloraController::class, 'contactUs']);
+Route::get('gallery', [FloraController::class, 'gallery']);

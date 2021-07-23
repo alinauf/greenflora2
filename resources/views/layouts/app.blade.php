@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{{url("favicon.ico")}}" type="image/x-icon"/>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    @yield('css')
+
+
     <title>Green Flora</title>
 </head>
 <body>
 
-<nav class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<nav class="bg-white shadow px-4 md:px-0">
+    <div class="max-w-7xl mx-auto">
         <div class="flex justify-between h-24">
             <div class="flex">
                 <div class="-ml-2 mr-2 flex items-center md:hidden">
@@ -18,7 +23,7 @@
 
                     <button
                         type="button"
-                        @click="toggleButton()"
+                        onclick="toggleButton()"
                         class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                         aria-controls="mobile-menu"
                         aria-expanded="false"
@@ -72,63 +77,63 @@
                 </div>
 
                 <div class="flex-shrink-0 flex items-center">
-                    <NuxtLink to="/">
+                    <a href="/">
                         <img
-                            src="@/assets/images/green-flora-landscape.jpeg"
+                            src="{{url("/images/green-flora-landscape.jpeg")}}"
                             class="p-4 p-sm-0 w-64"
                             alt="Green Flora Logo"
                         />
-                    </NuxtLink>
+                    </a>
                 </div>
                 <div class="hidden md:ml-6 md:flex md:space-x-8">
-                    <NuxtLink
-                        to="/"
+                    <a
+                        href="/"
                         class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gf-main inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     >
                         Home
-                    </NuxtLink>
+                    </a>
 
-                    <NuxtLink
-                        to="our-services"
+                    <a
+                        href="our-services"
                         class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gf-main inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     >
                         Our Services
-                    </NuxtLink>
+                    </a>
 
-                    <NuxtLink
-                        to="/rooms"
+                    <a
+                        href="/rooms"
                         class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gf-main inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     >
                         Rooms
-                    </NuxtLink>
+                    </a>
 
-                    <NuxtLink
-                        to="diving"
+                    <a
+                        href="diving"
                         class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gf-main inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     >
                         Diving
-                    </NuxtLink>
+                    </a>
 
-                    <NuxtLink
-                        to="/maldives"
+                    <a
+                        href="/maldives"
                         class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gf-main inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     >
                         Maldives
-                    </NuxtLink>
+                    </a>
 
-                    <NuxtLink
-                        to="/about-us"
+                    <a
+                        href="/about-us"
                         class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gf-main inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     >
                         About Us
-                    </NuxtLink>
+                    </a>
 
-                    <NuxtLink
-                        to="/contact-us"
+                    <a
+                        href="/contact-us"
                         class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gf-main inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     >
                         Contact Us
-                    </NuxtLink>
+                    </a>
                 </div>
             </div>
             <div class="hidden  md:flex items-center">
@@ -161,54 +166,54 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="hidden md:hidden" id="mobile-menu">
         <div class="pt-2 pb-3 space-y-1">
-            <NuxtLink
-                to="/"
+            <a
+                href="/"
                 class="border-transparent text-gray-800 hover:bg-gray-50 hover:border-gray-300 hover:text-green-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
             >
                 Home
-            </NuxtLink>
+            </a>
 
-            <NuxtLink
-                to="our-services"
+            <a
+                href="our-services"
                 class="border-transparent text-gray-800 hover:bg-gray-50 hover:border-gray-300 hover:text-green-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
             >
                 Our Services
-            </NuxtLink>
+            </a>
 
-            <NuxtLink
-                to="rooms"
+            <a
+                href="rooms"
                 class="border-transparent text-gray-800 hover:bg-gray-50 hover:border-gray-300 hover:text-green-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
             >
                 Rooms
-            </NuxtLink>
+            </a>
 
-            <NuxtLink
-                to="diving"
+            <a
+                href="diving"
                 class="border-transparent text-gray-800 hover:bg-gray-50 hover:border-gray-300 hover:text-green-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
             >
                 Diving
-            </NuxtLink>
+            </a>
 
-            <NuxtLink
-                to="maldives"
+            <a
+                href="maldives"
                 class="border-transparent text-gray-800 hover:bg-gray-50 hover:border-gray-300 hover:text-green-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
             >
                 Maldives
-            </NuxtLink>
+            </a>
 
-            <NuxtLink
-                to="about-us"
+            <a
+                href="about-us"
                 class="border-transparent text-gray-800 hover:bg-gray-50 hover:border-gray-300 hover:text-green-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
             >
                 About Us
-            </NuxtLink>
+            </a>
 
-            <NuxtLink
-                to="contact-us"
+            <a
+                href="contact-us"
                 class="border-transparent text-gray-800 hover:bg-gray-50 hover:border-gray-300 hover:text-green-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
             >
                 Contact Us
-            </NuxtLink>
+            </a>
         </div>
     </div>
 </nav>
@@ -321,6 +326,7 @@
 </script>
 
 <script src="{{ mix('js/app.js') }}"></script>
+@yield('scripts')
 
 </body>
 </html>
