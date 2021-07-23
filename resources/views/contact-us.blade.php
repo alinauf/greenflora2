@@ -88,25 +88,25 @@
                             </dl>
                         </div>
 
-                        <div>
-                            <h3 class="text-lg font-medium text-warm-gray-900">
-                                Facebook ID
-                            </h3>
-                            <dl class="mt-2 text-base text-warm-gray-500">
-                                <div>
-                                    <dt class="sr-only"></dt>
-                                    <dd></dd>
-                                </div>
-                                <div class="mt-1">
-                                    <dt class="sr-only">
-                                        Facebook
-                                    </dt>
-                                    <dd>
-                                        greenflora2021
-                                    </dd>
-                                </div>
-                            </dl>
-                        </div>
+{{--                        <div>--}}
+{{--                            <h3 class="text-lg font-medium text-warm-gray-900">--}}
+{{--                                Facebook ID--}}
+{{--                            </h3>--}}
+{{--                            <dl class="mt-2 text-base text-warm-gray-500">--}}
+{{--                                <div>--}}
+{{--                                    <dt class="sr-only"></dt>--}}
+{{--                                    <dd></dd>--}}
+{{--                                </div>--}}
+{{--                                <div class="mt-1">--}}
+{{--                                    <dt class="sr-only">--}}
+{{--                                        Facebook--}}
+{{--                                    </dt>--}}
+{{--                                    <dd>--}}
+{{--                                        greenflora2021--}}
+{{--                                    </dd>--}}
+{{--                                </div>--}}
+{{--                            </dl>--}}
+{{--                        </div>--}}
 
                         <div>
                             <h3 class="text-lg font-medium text-warm-gray-900">
@@ -154,7 +154,7 @@
                             <a
                                 href="https://www.google.com/maps/place/Green+Flora/@4.1740887,73.4853653,19z/data=!4m11!1m2!3m1!2sGreen+Flora!3m7!1s0x3b3f7e345089221d:0xaae0af6a94e044d4!5m2!4m1!1i2!8m2!3d4.1745269!4d73.485106"
                             >
-                                <img :src="`GreenFlora Location.png`" alt="" />
+                                <img src="/images/GreenFlora Location.png" alt="" />
                             </a>
                         </div>
                         <div>

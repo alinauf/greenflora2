@@ -271,11 +271,11 @@
                 >
                 <br />
 
-                <a
-                    href=""
-                    class="text text-dark hover:text-black text-left inline-block mt-2"
-                >Facebook ID: greenflora2021</a
-                >
+{{--                <a--}}
+{{--                    href=""--}}
+{{--                    class="text text-dark hover:text-black text-left inline-block mt-2"--}}
+{{--                >Facebook ID: greenflora2021</a--}}
+{{--                >--}}
                 <br />
             </div>
         </div>
@@ -296,13 +296,13 @@
                     >Instagram</a
                     >
                 </li>
-                <li class="mr-8">
-                    <a
-                        class="text-white text-bold no-underline hover:text-black"
-                        href="https://www.facebook.com/greenflora2021"
-                    >Facebook</a
-                    >
-                </li>
+{{--                <li class="mr-8">--}}
+{{--                    <a--}}
+{{--                        class="text-white text-bold no-underline hover:text-black"--}}
+{{--                        href="https://www.facebook.com/greenflora2021"--}}
+{{--                    >Facebook</a--}}
+{{--                    >--}}
+{{--                </li>--}}
             </ul>
         </div>
     </div>
